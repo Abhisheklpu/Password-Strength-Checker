@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <!-- <p class="description">Check how strong your password is and get tips to improve it.</p> -->
+        
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button id="togglePassword" aria-label="Toggle password visibility">👁️</button>
+        </div>
+
+        <div class="strength-meter">
+            <div class="strength-bar">
+                <div class="strength-level"></div>
+            </div>
+            <p id="strength-text">Password strength: <span>Not entered</span></p>
+        </div>
+
+        <div class="requirements">
+            <h2>Password Requirements:</h2>
+            <ul>
+                <li id="length" class="requirement">❌ At least 8 characters</li>
+                <li id="lowercase" class="requirement">❌ At least one lowercase letter</li>
+                <li id="uppercase" class="requirement">❌ At least one uppercase letter</li>
+                <li id="number" class="requirement">❌ At least one number</li>
+                <li id="special" class="requirement">❌ At least one special character</li>
+            </ul>
+        </div>
+
+        <div class="tips">
+            <h2>Tips for a Strong Password:</h2>
+            <ul>
+                <li>Use a mix of uppercase and lowercase letters</li>
+                <li>Include numbers and special characters</li>
+                <li>Avoid common words and personal information</li>
+                <li>Make it at least 8 characters long</li>
+                <li>Consider using a password manager</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
